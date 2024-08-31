@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include<string.h>
+void main()
+{
+  char str1[100],str2[100];
+  int a;
+  printf("enter the two str");
+  scanf("%s",str1);
+  scanf(" %s",str2);
+  a=strcmp(str1,str2);
+  if(a==0){
+    printf("the string are equal");
+  }
+  else if(a<0){
+    printf("%s comes before %s lexicographically",str1,str2);
+  } 
+  else{//a>0
+    printf("%s comes after %s lexicographically",str1,str2);
+  }
+}
+
