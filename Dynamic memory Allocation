@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+void main()
+{
+  char *name;
+  name = malloc(14);
+  name = realloc(name,100);
+  strcpy(name,"DEEPAK IS A GOOD BOY");
+  printf("%s\n",name);
+  free(name);
+
+}

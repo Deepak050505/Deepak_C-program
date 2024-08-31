@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main()
+{
+  FILE *fp;
+  char c[100];
+  fp=fopen("Deepak.txt","r");
+  fgets(c,10,fp);
+  printf("Character if %s\n",c);
+  fclose(fp);
+
+
+}
